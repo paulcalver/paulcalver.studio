@@ -1,0 +1,60 @@
+:root { color-scheme: light dark; }
+
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #f1f1f1;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Home link (top-left) */
+.home-link {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  text-decoration: none;
+  color: inherit;
+  z-index: 20; /* above video/canvas */
+}
+.home-link:hover {
+  text-decoration: none; /* no underline on hover */
+}
+
+/* Full viewport area with the pair centered */
+.stage {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+/* Pair is centered and uses a small, responsive gap */
+.pair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 20px);
+  max-height: 92vh;
+}
+
+/* Each frame is a fixed 3:4 portrait box */
+.frame {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  height: min(80vh, 900px);
+  max-height: 92vh;
+  width: auto;
+}
+
+/* Fill frame and crop appropriately */
+.frame > video,
+.frame > canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}

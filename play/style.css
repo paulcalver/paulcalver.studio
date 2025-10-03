@@ -1,0 +1,42 @@
+/* base reset */
+html, body { margin: 0; padding: 0; height: 100%; }
+body { background: #f1f1f1; font-family: 'Space Mono', monospace; }
+
+/* canvas fix (removes baseline gap) */
+canvas { display: block; }
+
+/* SKETCH PAGES ONLY */
+body.sketch { background: #000; overflow: hidden; }
+body.sketch .logo { color: #fff; }
+
+/* LANDING PAGE ONLY */
+body.landing {
+  min-height: 100svh;           /* handles mobile UI chrome better than 100vh */
+  display: grid;
+  place-items: center;
+}
+
+/* shared UI */
+.wrapper { text-align: center; }
+
+.logo {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.logo-top-left {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+
+.nav-link {
+  display: block;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+.nav-link:hover { text-decoration: underline; }

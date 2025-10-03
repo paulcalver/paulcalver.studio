@@ -1,0 +1,76 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: 'Space Mono', monospace;
+  background: #f1f1f1;
+  color: #000;
+}
+
+/* Landing */
+.landing {
+  display: grid;
+  place-items: center;
+  gap: 8px;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.home-link {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  text-decoration: none;
+  color: inherit;
+  z-index: 20; /* ensure it's above canvas */
+}
+.home-link:hover {
+  text-decoration: none;
+}
+
+/* Stage */
+.stage {
+  position: fixed;
+  inset: 0;
+}
+#vid {
+  display: none;
+}
+#viz {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.btn-stop {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: none;
+  border: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  color: inherit;
+  cursor: pointer;
+}
+.btn-stop:hover {
+  text-decoration: none;
+}

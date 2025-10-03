@@ -1,0 +1,20 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+  font-family: 'Space Mono', monospace;
+}
+canvas {
+  display: block;
+}
+.logo {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.logo-top-left {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}

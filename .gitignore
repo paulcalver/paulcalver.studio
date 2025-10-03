@@ -1,0 +1,24 @@
+# Kirby runtime (now under htdocs)
+htdocs/site/cache/
+htdocs/media/
+htdocs/thumbs/
+htdocs/content/
+htdocs/site/sessions/
+htdocs/site/accounts/
+!htdocs/site/accounts/.gitkeep
+
+# Composer / Node
+/vendor/
+/composer.lock
+/node_modules/
+/npm-debug.log
+/yarn-error.log
+
+# Editor & OS junk
+.DS_Store
+.nova/
+/-
+Thumbs.db
+
+
+

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>web cam</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Home button -->
+  <a href="../" class="home-link">*_* </a>
+
+  <div id="landing" class="landing">
+    <button id="startBtn" class="btn-link">Launch webcam</button>
+  </div>
+
+  <div id="stage" class="stage" hidden>
+    <video id="vid" playsinline muted></video>
+    <canvas id="viz"></canvas>
+    <button id="stopBtn" class="btn-stop">Stop</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

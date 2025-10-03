@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Split — Gradient + Motion</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Home button -->
+  <a href="../" class="home-link">*_*</a>
+
+  <!-- Centered pair (video + viz) -->
+  <div class="stage">
+	<div class="pair">
+	  <!-- LEFT: 3:4 portrait video -->
+	  <div class="frame" id="videoFrame" aria-label="3:4 portrait frame">
+		<video id="vid" playsinline muted loop src="video/soar_01.mp4"></video>
+	  </div>
+
+	  <!-- RIGHT: same-sized frame for the viz -->
+	  <div class="frame" id="vizFrame" aria-label="Visual frame">
+		<canvas id="viz"></canvas>
+	  </div>
+	</div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
